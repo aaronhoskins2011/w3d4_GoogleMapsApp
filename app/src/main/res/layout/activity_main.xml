@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aaron.w3d4_googlemapsapp.MainActivity">
+
+   <EditText
+       android:id="@+id/etAddress"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    <Button
+        android:text="Get Location By Address"
+        android:onClick="getInfoByAddress"
+        android:id="@+id/btnLocateByAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etLatitude"
+            android:layout_width="200dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/etLongitude"
+            android:layout_width="200dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:text="Get Location by Lat Lng"
+        android:onClick="getInfoByLatLng"
+        android:id="@+id/btnLocateByLatLng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
